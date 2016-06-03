@@ -1,0 +1,141 @@
+%!Adobe-FontList 1.16
+%Locale:0x40c
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Alegreya-Bold
+FamilyName:Alegreya
+StyleName:Bold
+FullName:Alegreya Bold
+MenuName:Alegreya
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\GOD ayana\Document fonts\Alegreya-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:47740
+FileModTime:1464254118
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Alegreya Bold
+NameArray:0,Win,1,Alegreya
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Alegreya-BoldItalic
+FamilyName:Alegreya
+StyleName:Bold Italic
+FullName:Alegreya Bold Italic
+MenuName:Alegreya
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\GOD ayana\Document fonts\Alegreya-BoldItalic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:45956
+FileModTime:1464254118
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Alegreya Bold Italic
+NameArray:0,Win,1,Alegreya
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Alegreya-Italic
+FamilyName:Alegreya
+StyleName:Italic
+FullName:Alegreya Italic
+MenuName:Alegreya
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\GOD ayana\Document fonts\Alegreya-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:45528
+FileModTime:1464254118
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Alegreya Italic
+NameArray:0,Win,1,Alegreya
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Alegreya-Regular
+FamilyName:Alegreya
+StyleName:Regular
+FullName:Alegreya
+MenuName:Alegreya
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\GOD ayana\Document fonts\Alegreya-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:48040
+FileModTime:1464254118
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Alegreya
+NameArray:0,Win,1,Alegreya
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\GOD ayana\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:218640
+FileModTime:1363364732
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Savor
+FamilyName:Savor
+StyleName:Regular
+FullName:Savor
+MenuName:Savor
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\GOD ayana\Document fonts\Savor.ttf
+DataFormat:sfntData
+FileLength:123024
+FileModTime:1306913502
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Savor
+NameArray:0,Win,1,Savor
+NameArray:0,Win,16,Savor
+%EndFont
+

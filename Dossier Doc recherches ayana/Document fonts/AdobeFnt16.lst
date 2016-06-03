@@ -1,0 +1,72 @@
+%!Adobe-FontList 1.16
+%Locale:0x40c
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Alegreya-Bold
+FamilyName:Alegreya
+StyleName:Bold
+FullName:Alegreya Bold
+MenuName:Alegreya
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\Dossier Doc recherches ayana\Document fonts\Alegreya-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:47740
+FileModTime:1464256328
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Alegreya Bold
+NameArray:0,Win,1,Alegreya
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Alegreya-Italic
+FamilyName:Alegreya
+StyleName:Italic
+FullName:Alegreya Italic
+MenuName:Alegreya
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\Dossier Doc recherches ayana\Document fonts\Alegreya-Italic.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:45528
+FileModTime:1464256328
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Alegreya Italic
+NameArray:0,Win,1,Alegreya
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Alegreya-Regular
+FamilyName:Alegreya
+StyleName:Regular
+FullName:Alegreya
+MenuName:Alegreya
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\Felina\Desktop\Dossier Doc recherches ayana\Document fonts\Alegreya-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:48040
+FileModTime:1464256328
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Alegreya
+NameArray:0,Win,1,Alegreya
+%EndFont
+
