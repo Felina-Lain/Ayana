@@ -1,0 +1,42 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class pickupveil : MonoBehaviour {
+
+	public float chrono;
+	public float fadeTime;
+	public float FadeOut_;
+	public float FadeIn_;
+
+
+	// Update is called once per frame
+	void OnTriggerEnter () {
+			
+		print("pickup");
+
+		//if(GameManager.enableVeilChange){
+
+			GameManager.veilOn = !GameManager.veilOn;
+			MaterialFadeIn.fadetimeON = FadeIn_;
+			MaterialFadeIn.fadetimeOFF = FadeOut_;
+			VeilCountdown(chrono);		
+
+
+	//	}
+	}
+
+
+
+	public void VeilCountdown(float chrono_){
+		
+		{
+			while(chrono_ > 0){
+				chrono_ -= Time.deltaTime / fadeTime;
+
+			}
+			GameManager.veilOn = false;
+		}
+
+
+	}
+}

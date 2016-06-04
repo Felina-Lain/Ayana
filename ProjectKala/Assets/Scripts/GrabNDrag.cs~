@@ -1,0 +1,72 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class GrabNDrag : MonoBehaviour {
+
+	public KeyCode grabDrag = KeyCode.E;
+	public float speed;
+	public bool grabbing;
+	public bool wayofGrab;
+
+	private Collider coll_;
+
+	void Start(){
+
+		grabbing = false;
+	}
+
+
+	
+	// Update is called once per frame
+	void OnTriggerStay (Collider _col) {
+
+		coll_ = _col;
+
+        if (_col.GetComponent<ObjectController>() == null)
+            return; 
+
+		if(_col.GetComponent<ObjectController>().isDraggable == true){
+			
+			if(Input.GetKeyDown(grabDrag)){
+
+				grabbing = !grabbing;
+				//2 way of doing this
+				if(wayofGrab){Dragouille1(_col);
+					
+				}
+
+			}
+
+
+		}
+	
+	}
+
+	void Update(){
+
+		if(grabbing && !wayofGrab){
+			Dragouille2(coll_);}
+
+
+	}
+
+	public void Dragouille1(Collider col_){
+
+			
+		if(grabbing){
+			col_.transform.parent = this.transform;}
+		if(!grabbing){
+			this.transform.GetChild(0).transform.parent = null;
+		}
+
+	}
+		
+
+	public void Dragouille2(Collider col_){
+
+		float step = speed * Time.deltaTime;
+		col_.transform.position = Vector3.MoveTowards(col_.transform.position, this.transform.position, step);
+
+
+	}
+}

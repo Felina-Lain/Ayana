@@ -1,0 +1,35 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class GameManager : MonoBehaviour {
+
+
+	//State of the veil, on or off
+	public static bool veilOn;
+
+	//enable changing veil or not
+	public static bool enableVeilChange;
+
+	public float FadeOut_;
+	public float FadeIn_;
+
+
+
+	// Use this for initialization
+	void Start () {
+
+		MaterialFadeIn.fadetimeON = FadeIn_;
+		MaterialFadeIn.fadetimeOFF = FadeOut_;
+
+		enableVeilChange = true;
+		veilOn = false;
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+
+		print("Veil" + veilOn);
+	
+	}
+}

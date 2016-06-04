@@ -1,0 +1,34 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
+
+public class ChangeLevel : MonoBehaviour {
+
+	public int currentLvl;
+	public List<string> levels = new List<string>();
+
+	void Start(){
+
+		string current = SceneManager.GetActiveScene().name;
+
+		for (int i = 0; i < levels.Count; i++){
+			if( current.Contains(levels[i])){				
+				currentLvl = i;}
+		}
+	}
+
+
+	void OnTriggerEnter () {
+
+	
+		if(currentLvl == levels.Count - 1){
+			SceneManager.LoadScene(levels[0]);
+		}
+		if(currentLvl < levels.Count - 1){
+			SceneManager.LoadScene(currentLvl + 1);
+		}
+
+	}
+}

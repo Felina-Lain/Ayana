@@ -1,0 +1,32 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class MirrorOFF : MonoBehaviour {
+
+
+	[SerializeField]
+ private GameObject probe;
+
+    void Start (){
+    	
+		probe = GameObject.Find("ReflectionProbe");
+    	
+    }
+	
+	
+	void OnTriggerEnter (Collider _col) {
+		
+		if(_col.name.Contains("Mirror")){
+		probe.gameObject.SetActive(true);
+		}
+	
+	}
+	
+	void OnTriggerExit (Collider _col) {
+		
+		if(_col.name.Contains("Mirror")){
+		probe.gameObject.SetActive(false);
+		}	
+		
+	}
+}

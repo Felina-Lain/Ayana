@@ -1,0 +1,71 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class MaterialFadeIn : MonoBehaviour {
+
+
+	public static float fadetimeON;
+	public static float fadetimeOFF;
+
+
+	void Start(){
+
+        Color color = this.GetComponent<Renderer>().material.color;
+		color.a = 1f;
+		this.GetComponent<Renderer>().material.color = color;
+	}
+
+
+	void Update(){
+
+		if(this.GetComponent<ObjectController>().startVisible){
+		if(GameManager.veilOn){
+
+			VeilOff();
+		}
+		if(!GameManager.veilOn){
+
+			VeilOn();
+			}
+		}
+
+		else{
+			if(GameManager.veilOn){
+
+				VeilOn();
+			}
+			if(!GameManager.veilOn){
+
+				VeilOff();
+			}
+
+		}
+
+	}
+
+    void VeilOn()
+    {
+		Color color = this.GetComponent<Renderer>().material.color;
+		if (color.a <= 1f)
+		{
+
+			color.a += Time.deltaTime / fadetimeON;
+		}
+		this.GetComponent<Renderer>().material.color = color;
+    }
+
+
+    void VeilOff()
+    {
+		Color color = this.GetComponent<Renderer>().material.color;
+		if (color.a > -1f)
+		{
+			color.a -= Time.deltaTime / fadetimeOFF;
+		}
+		this.GetComponent<Renderer>().material.color = color;
+
+    }
+		
+
+
+}

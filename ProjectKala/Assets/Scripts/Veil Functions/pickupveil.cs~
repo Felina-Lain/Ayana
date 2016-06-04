@@ -1,0 +1,39 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class pickupveil : MonoBehaviour {
+
+	public float chrono;
+	private float chrono_;
+	public float fadeTime;
+	public float FadeOut_;
+	public float FadeIn_;
+
+	public bool pickup;
+
+	// Update is called once per frame
+	void Update(){
+
+		//here it works (see below), it changes the manager veilOn
+		if(pickup){
+			GameManager.veilOn = pickup;
+			chrono_ -= Time.deltaTime / fadeTime;
+
+			if(chrono_ <= 0){
+				GameManager.veilOn = false;
+				pickup = false;}
+		}
+	}
+
+	void OnTriggerEnter () {	
+	
+
+		if(GameManager.enableVeilChange && !pickup){
+			pickup = true;
+			MaterialFadeIn.fadetimeON = FadeIn_;
+			MaterialFadeIn.fadetimeOFF = FadeOut_;
+			chrono_ = chrono;	
+			}
+	}
+		
+}

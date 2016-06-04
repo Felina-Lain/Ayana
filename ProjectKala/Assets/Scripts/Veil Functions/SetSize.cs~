@@ -1,0 +1,34 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class SetSize : MonoBehaviour {
+
+    public Vector3 veilOnSize;
+    public Vector3 veilOffSize;
+
+	void Update(){
+
+		if(GameManager.veilOn){
+
+			VeilOn();
+		}
+		if(!GameManager.veilOn){
+
+			VeilOff();
+		}
+
+	}
+
+
+
+    void VeilOn()
+    {
+        transform.localScale = veilOnSize; 
+    }
+
+    void VeilOff()
+    {
+        transform.localScale = veilOffSize; 
+
+    }
+}

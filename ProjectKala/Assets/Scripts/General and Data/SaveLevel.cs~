@@ -1,0 +1,24 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
+public class SaveLevel : MonoBehaviour {
+
+	public BinaryFormatter bf;
+	public int dataa;
+
+	// Use this for initialization
+	void Start () {
+
+		dataa = GetComponent<LoadLevelOnKey>().currentLvl;
+
+		BinaryFormatter bf = new BinaryFormatter();
+		FileStream file = File.Create (Application.persistentDataPath + "savegame.bananasplit");
+		bf.Serialize(file, dataa);
+		file.Close();
+
+	}
+}

@@ -1,0 +1,43 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class SetSpriteColor : MonoBehaviour
+{
+
+
+    public Color veilOnColor = Color.white;
+    public Color veilOffColor = Color.white;
+
+
+	void Update(){
+
+		if(GameManager.veilOn){
+
+			VeilOn();
+		}
+		if(!GameManager.veilOn){
+
+			VeilOff();
+		}
+
+	}
+
+
+
+    void VeilOn()
+    {
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.material.color = veilOnColor;
+
+
+    }
+
+
+    void VeilOff()
+    {
+        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
+        renderer.material.color = veilOffColor;
+    }
+
+
+}
