@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{308088DE-6DE9-8BB5-60AB-BE95941E8B56}") = "ProjectKala", "Assembly-CSharp.csproj", "{F0ACFE26-0315-7FB7-8E40-81202605B4D8}"
+EndProject
+Project("{308088DE-6DE9-8BB5-60AB-BE95941E8B56}") = "ProjectKala", "Assembly-CSharp-Editor.csproj", "{23A17D39-A876-2E78-3E27-D313D38E27DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0ACFE26-0315-7FB7-8E40-81202605B4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0ACFE26-0315-7FB7-8E40-81202605B4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0ACFE26-0315-7FB7-8E40-81202605B4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0ACFE26-0315-7FB7-8E40-81202605B4D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A17D39-A876-2E78-3E27-D313D38E27DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A17D39-A876-2E78-3E27-D313D38E27DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A17D39-A876-2E78-3E27-D313D38E27DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A17D39-A876-2E78-3E27-D313D38E27DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

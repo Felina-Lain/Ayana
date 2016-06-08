@@ -10,19 +10,11 @@ public class ChangeLevel : MonoBehaviour
     public int currentLvl;
     public List<string> levels = new List<string>();
 
-    [SerializeField]
-    private AudioClip m_sound;
-    private AudioSource m_AudioSource;
-    [SerializeField]
-    private bool m_playAudio = false; 
-    [SerializeField]
-    private bool m_waitForSeconds = false;
 
     void Start()
     {
 
         string current = SceneManager.GetActiveScene().name;
-        m_AudioSource = this.GetComponent<AudioSource>();
 
         for (int i = 0; i < levels.Count; i++)
         {
@@ -48,20 +40,6 @@ public class ChangeLevel : MonoBehaviour
 
     private IEnumerator PlaySound()
     {
-        if (m_playAudio)
-        {
-            if (m_AudioSource != null)
-            {
-                if (m_sound != null)
-                    m_AudioSource.clip = m_sound;
-
-                m_AudioSource.Play();
-
-            }
-        }
-        if (m_waitForSeconds)
-            yield return new WaitForSeconds(1f);
-
         int _tip = levels.Count - 1;
         if (currentLvl == _tip)
         {

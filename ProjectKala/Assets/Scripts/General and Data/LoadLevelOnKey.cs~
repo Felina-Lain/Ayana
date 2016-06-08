@@ -24,12 +24,11 @@ public class LoadLevelOnKey : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-        {
-            LoadLevel(0);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha1))
+		if (Input.GetKeyDown(KeyCode.M))
+		{
+			LoadLevel(0);
+		}
+		else if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             LoadLevel(1);
         }
@@ -52,27 +51,8 @@ public class LoadLevelOnKey : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             LoadLevel(6);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha7))
-        {
-            LoadLevel(7);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha8))
-        {
-            LoadLevel(8);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            LoadLevel(9);
-        }
-		if (Input.GetKeyDown(KeyCode.M))
-		{
-			LoadLevel(10);
 		}
-		if (Input.GetKeyDown(KeyCode.L))
-		{
-			LoadLevel(11);
-		}
+
 	}
 
 	public void LoadLevel(int level)
