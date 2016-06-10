@@ -1,0 +1,29 @@
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class VolumeControls : MonoBehaviour {
+
+	public AudioSource musics;
+	public float volume;
+
+
+	// Use this for initialization
+	void Start () {
+	
+		musics = GameObject.Find("BackgroundMusic").transform.GetComponent<AudioSource>();
+
+	}
+
+	void Update (){
+
+		volume = GameObject.Find("Slider").transform.GetComponent<Slider>().value;
+	}
+	
+	// Update is called once per frame
+	public void ChangeVolume () {
+
+		musics.volume = volume;
+	
+	}
+}

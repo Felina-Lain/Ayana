@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 public class GameManager : MonoBehaviour {
 
@@ -8,7 +10,7 @@ public class GameManager : MonoBehaviour {
     //for testing game
     public bool debugMode = true;
 
-
+	public AudioSource[] audios = new AudioSource[10];
 
     private static GameManager instance; 
 
@@ -45,7 +47,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start() {
 
-
+		audios = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
 
         if (!debugMode)
         {
@@ -55,9 +57,20 @@ public class GameManager : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update() {		
+    void Update() {	
+		
         SetCursorActive();
-    }
+	
+		foreach (AudioSource _audio in audios){
+			if(_audio != null){
+			if (!_audio.name.Contains("Background")){
+				_audio.volume = VolumeGestion._volume;
+				print("volume" + VolumeGestion._volume);
+		 		}
+			}
+		}
+	
+	}
 
     private void SetCursorActive()
     {
