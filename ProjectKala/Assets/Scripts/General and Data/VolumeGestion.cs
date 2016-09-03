@@ -1,20 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Linq;
 
 public class VolumeGestion : MonoBehaviour {
 
-	public Slider _slider;
-	public static float _volume = 0.5f;
+	public Slider _sliderFX;
+	public Slider _sliderM;
+	public static float _volumeFX;
+	public static float _volumeM;
 
 
 	// Update is called once per frame
-	public void GetVolume () {
+	void Update () {
+		
+		_sliderFX = GameObject.Find ("FX").GetComponent<Slider> ();
+		if (_sliderFX == null) return;
+		_sliderM = GameObject.Find ("Music").GetComponent<Slider> ();
+		if (_sliderM == null) return;
 
-		_slider = GameObject.Find("FX").GetComponent<Slider>();
+		_volumeFX = _sliderFX.value;
+		_volumeM = _sliderM.value;
 
-		_volume = _slider.value;
-	
 	}
 
 }
