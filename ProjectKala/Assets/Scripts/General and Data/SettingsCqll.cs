@@ -11,7 +11,8 @@ public class SettingsCqll : MonoBehaviour {
 	// Update is called once per frame
 	public void CallMenu (GameObject canvasOn) {
 
-		canvasOn.gameObject.SetActive(true);	
+		canvasOn.gameObject.SetActive(true);
+
 	}
 
 	public void OffMenu (GameObject canvasOff) {

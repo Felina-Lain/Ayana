@@ -104,6 +104,7 @@
      <Compile Include="Assets\Scripts\General and Data\LoadLevelOnKey.cs" />
      <Compile Include="Assets\Scripts\General and Data\LoadSceneOnTriggerEnter.cs" />
      <Compile Include="Assets\Scripts\General and Data\RenderOnZone.cs" />
+     <Compile Include="Assets\Scripts\General and Data\SavedData.cs" />
      <Compile Include="Assets\Scripts\General and Data\SettingsCqll.cs" />
      <Compile Include="Assets\Scripts\General and Data\StockInEnvironment.cs" />
      <Compile Include="Assets\Scripts\General and Data\VolumeGestion.cs" />

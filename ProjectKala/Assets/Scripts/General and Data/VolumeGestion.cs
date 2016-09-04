@@ -6,10 +6,10 @@ using System.Linq;
 
 public class VolumeGestion : MonoBehaviour {
 
-	public Slider _sliderFX;
-	public Slider _sliderM;
-	public static float _volumeFX;
-	public static float _volumeM;
+	public static Slider _sliderFX;
+	public static Slider _sliderM;
+	public static float _volumeFX = 0.1f;
+	public static float _volumeM = 0.1f;
 
 
 	// Update is called once per frame

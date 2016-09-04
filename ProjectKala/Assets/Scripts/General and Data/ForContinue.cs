@@ -7,10 +7,11 @@ using System.IO;
 using UnityEngine.SceneManagement;
 
 public class ForContinue : MonoBehaviour {
-
-
+	
+	public BinaryFormatter bf;
 	// Update is called once per frame
 	public void Continued () {
+
 
 		if(File.Exists(Application.persistentDataPath + "savegame.bananasplit")) {
 			BinaryFormatter bf = new BinaryFormatter();
