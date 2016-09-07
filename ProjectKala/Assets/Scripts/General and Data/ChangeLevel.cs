@@ -42,8 +42,6 @@ public class ChangeLevel : MonoBehaviour
 			if (currentLvl != 0) {
 
 				dataa = currentLvl + 1;
-				print ("dataa" + dataa);
-				print(Application.persistentDataPath);
 			}
 
 				BinaryFormatter bf = new BinaryFormatter();
@@ -60,7 +58,6 @@ public class ChangeLevel : MonoBehaviour
         if (currentLvl == _tip)
         {
             SceneManager.LoadScene(levels[0]);
-            print("reached");
         }
         if (currentLvl < _tip)
         {

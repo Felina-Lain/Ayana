@@ -101,6 +101,7 @@
      <Compile Include="Assets\Scripts\General and Data\ForContinue.cs" />
      <Compile Include="Assets\Scripts\General and Data\Formulas.cs" />
      <Compile Include="Assets\Scripts\General and Data\GameManager.cs" />
+     <Compile Include="Assets\Scripts\General and Data\KeyBind.cs" />
      <Compile Include="Assets\Scripts\General and Data\LoadLevelOnKey.cs" />
      <Compile Include="Assets\Scripts\General and Data\LoadSceneOnTriggerEnter.cs" />
      <Compile Include="Assets\Scripts\General and Data\RenderOnZone.cs" />
